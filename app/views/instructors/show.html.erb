@@ -6,3 +6,5 @@
 </ul>
 <% end %>
 <%= button_to "Delete Instructor", @instructor, method: :delete %>
+<button><%= link_to "Update Instructor", edit_instructor_path(@instructor) %></button>
+<button><%= link_to "All Instructors", instructors_path %>

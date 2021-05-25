@@ -3,3 +3,5 @@
 <h2>Age: <%= @student.age %></h2>
 <h2>Instructor: <%= @student.instructor.name %></h2>
 <%= button_to "Delete Student", @student, method: :delete %>
+<button><%= link_to "Update Student", edit_student_path(@student) %></button>
+<button><%= link_to "All Students", students_path %>
