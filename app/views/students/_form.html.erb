@@ -1,0 +1,22 @@
+<% if flash[:errors]%>
+<% flash[:errors].map do |error| %>
+  <p><%= error %></p>
+  <%end%>
+<%end%>
+
+<%= form_for @student do |f|%>
+
+<%= f.label :name %>
+<%= f.text_field :name%>
+
+<%= f.label :major %>
+<%= f.text_field :major%>
+
+<%= f.label :age %>
+<%= f.number_field :age%>
+
+<%= f.collection_select :instructor_id, @instructors, :id, :name %>
+
+<%= f. submit %>
+
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Instructor: <%= @instructor.name %></h1>
+<h3>Current Students:</h3>
+<% @instructor.students.map do |student| %>
+<ul>
+<li><%= link_to student.name, student %></li>
+</ul>
+<% end %>
+<%= button_to "Delete Instructor", @instructor, method: :delete %>

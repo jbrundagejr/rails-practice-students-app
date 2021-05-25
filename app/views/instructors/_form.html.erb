@@ -1,0 +1,14 @@
+<% if flash[:errors]%>
+  <% flash[:errors].map do |error|%>
+  <p><%= error %></p>
+  <% end %>
+<% end %>
+
+<%= form_for @instructor do |f|%>
+
+<%= f.label :name%>
+<%= f.text_field :name%>
+
+<%= f. submit%>
+
+<% end %>

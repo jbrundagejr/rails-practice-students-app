@@ -1,0 +1,5 @@
+<h1><%= @student.name %></h1>
+<h2>Major: <%= @student.major%></h2>
+<h2>Age: <%= @student.age %></h2>
+<h2>Instructor: <%= @student.instructor.name %></h2>
+<%= button_to "Delete Student", @student, method: :delete %>

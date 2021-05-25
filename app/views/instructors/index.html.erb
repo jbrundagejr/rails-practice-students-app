@@ -1,0 +1,4 @@
+<h1>Current Instructors</h1>
+<% @instructors.map do |instructor_instance|%>
+<h2><%= link_to instructor_instance.name, instructor_instance %>
+<% end %>

@@ -1,0 +1,4 @@
+<h1>Current Students Enrolled</h1>
+<% @students.map do |student_instance|%>
+<h2><%= link_to student_instance.name, student_instance %>
+<% end %>
